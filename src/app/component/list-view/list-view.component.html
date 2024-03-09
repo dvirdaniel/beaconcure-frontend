@@ -1,0 +1,8 @@
+<mat-list>
+  <mat-expansion-panel *ngFor="let item of items">
+    <mat-expansion-panel-header>
+      {{ item.name }}
+    </mat-expansion-panel-header>
+    <app-table-view [dataSource]="item.tables"></app-table-view>
+  </mat-expansion-panel>
+</mat-list>
